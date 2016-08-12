@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">白鸽医生</string>
+
+    <string name="one">首页</string>
+    <string name="two">第二页</string>
+    <string name="three">第三页</string>
+    <string name="four">第四页</string>
+    <string name="http_error">网络请求失败</string>
+    <string name="dialog_wait">请等一下</string>
+    <string name="information">资讯</string>
+    <string name="getdoctor">找医生</string>
+    <string name="community">社区</string>
+    <string name="me">我</string>
+
+    <string name="phone_state_permission_not_granted">因为没有设备号信息，账号无法登录</string>
+</resources>
