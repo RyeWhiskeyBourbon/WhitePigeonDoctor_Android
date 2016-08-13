@@ -41,8 +41,6 @@ public class NextFragment extends Fragment{
             @Override
             public void onResponse(Result response) {
                 Log.e("suc", String.valueOf(response.getResultscode()));
-                Log.e("suc", String.valueOf(response.getResultscode()));
-                Log.e("suc", String.valueOf(response.getResultscode()));
             }
         };
         AppContext.getInstance().getServerApi().loginToken("18562599337","qwertyu", szImei,listener,errorListener);

@@ -52,6 +52,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data android:name="EASEMOB_APPKEY"  android:value="zhongyujiaoyu#zhongyujishu" />
+
         <activity android:name=".activity.SplashActivity">
 
             <intent-filter>
@@ -62,6 +63,82 @@
         </activity>
         <activity android:name=".activity.NextActivity"></activity>
         <activity android:name=".activity.MainActivity"></activity>
+
+
+
+        <!--精简版-->
+        <activity
+            android:name="com.umeng.simplify.ui.activities.FindActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.umeng.simplify.ui.activities.NewMsgActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.umeng.simplify.ui.activities.SettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.umeng.simplify.ui.activities.UserInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.umeng.simplify.ui.activities.TopicDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.umeng.simplify.ui.activities.PostFeedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.umeng.common.ui.activities.LoginSimplifyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.umeng.common.ui.activities.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.umeng.simplify.ui.activities.FeedsActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.umeng.common.ui.activities.BrowserActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+
+        <!-- 线上discuss demo Appkey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5780521867e58e49280043b0" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="f1b6300f5e970785faef0055a18e3a0e" >
+        </meta-data>
+
+        <!-- 高德地图app key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="912c48667e17b39f2137c2f4d0c5e4d8" />
+
+        <!--<activity android:name=".activity.GuideActivity" >-->
+        <!--</activity>-->
+
+        <!--<activity-->
+            <!--android:name=".activity.MediaPlayActivity"-->
+            <!--android:screenOrientation="landscape" />-->
     </application>
 
 </manifest>
