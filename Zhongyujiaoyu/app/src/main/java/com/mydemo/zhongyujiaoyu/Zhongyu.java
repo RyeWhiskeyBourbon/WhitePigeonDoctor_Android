@@ -20,6 +20,10 @@ import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
 import com.mydemo.zhongyujiaoyu.constant.Constant;
 import com.tencent.bugly.crashreport.CrashReport;
+import com.umeng.comm.core.CommunitySDK;
+import com.umeng.comm.core.beans.CommConfig;
+import com.umeng.comm.core.impl.CommunityFactory;
+import com.umeng.simplify.ui.presenter.impl.LoginSuccessStrategory;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -67,6 +71,12 @@ public class Zhongyu extends MultiDexApplication {
         EMClient.getInstance().init(getApplicationContext(), options);
 //////在做打包混淆时，关闭debug模式，避免消耗不必要的资源
 ////        EMClient.getInstance().setDebugMode(true);
+
+        ////  初始化sdk
+        CommunitySDK mCommSDK = CommunityFactory.getCommSDK(this);
+        mCommSDK.initSDK(this);
+
+
 
         ourInstance = this;
 
